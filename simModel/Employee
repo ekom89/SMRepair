@@ -1,0 +1,30 @@
+
+public class Employee {
+
+	/*
+	 AVAILABLE = when an employee is available for servicing calls
+	LUNCH = when an employee is out for lunch
+	TRAVELING = when an employee is traveling
+	SERVICING = when an employee is servicing
+	 */
+	static enum status {AVAILABLE, LUNCH, TRAVELING, SERVICING};
+	
+	/*
+	 * Holds the value of the amount of overtime hours 
+	 * performed by the employee servicing a premium contract
+	 */
+	int numOvertimeHours;
+	
+	/*
+	 * Stores the Call entity that has been assigned to the employee
+	 */
+	Call assignedTo;
+	
+	/*
+	 * Set to TRUE if the employee had lunch during 
+	 * the current day. Otherwise, FALSE
+	 */
+	boolean hadLunch;
+
+
+}
