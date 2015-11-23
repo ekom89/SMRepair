@@ -1,0 +1,22 @@
+import java.util.ArrayList;
+
+public class ServiceRequests {
+	/*
+	 * List of calls waiting to be serviced 
+	 */
+	private ArrayList<Call> list = new ArrayList<Call>();
+
+	public ArrayList<Call> getList() {
+		return list;
+	}
+	void spInsertQue(Call call) { list.add(call); }
+	 
+	Call spRemoveQue()
+	{
+		Call call = null;
+			if(list.size() != 0) 
+				call = list.remove(0);
+			return(call);
+	}
+	 
+}
